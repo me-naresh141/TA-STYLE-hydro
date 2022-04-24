@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* general style */
+body {
+  background-color: rgb(163, 158, 158);
+  font-family: "Akshar", sans-serif;
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 30px;
+  background-color: rgb(208, 73, 50);
+  color: white;
+  font-weight: 700;
+  border: 1px solid red;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* header */
+.header {
+  background: linear-gradient(
+    to right,
+    rgb(18, 120, 230, 0.8),
+    rgb(75, 233, 98, 0.8)
+  );
+}
+.logo {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+.navigation {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding-left: 30px;
+}
+.fa-brands {
+  padding-left: 20px;
+  color: white;
+}
+
+/* hero-section */
+.hero-section {
+  height: 100vh;
+  background-image: url("./assets/checkpoint-3");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  object-fit: contain;
+  background-size: contain;
+  position: relative;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(18, 120, 230, 0.8),
+    rgb(75, 233, 98, 0.8)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1 {
+  font-size: 3.5rem;
+  color: white;
+  line-height: 1.3;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.video {
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: rgb(59, 137, 206);
+  border: 2px solid white;
+  color: white;
+}
+.btn-div {
+  justify-content: flex-start;
+}
+.small {
+  margin-left: 20px;
+  color: white;
+}
+
+/* article-section */
+.article-section {
+  background-color: white;
+}
+.article-div {
+  width: 30%;
+  line-height: 1.5;
+}
+.article-div-p {
+  font-size: 20px;
+}
+hr {
+  background-color: black;
+  border: 1px solid;
+  width: 50%;
+  margin-left: 0;
+}
+
+.article-heading {
+  font-size: 30px;
+}
+.article-pera {
+  margin: 10px 0;
+  color: rgb(146, 143, 143);
+}
+.point {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(216, 216, 216);
+  margin-left: 8px;
+}
+.rectangle {
+  display: flex;
+}
+.small-p {
+  margin-left: 80px;
+}
+.small-p-3 {
+  margin-left: 35px;
+}
+/* blog-section */
+.blog-section {
+  background-color: rgb(239, 239, 239);
+  padding-bottom: 150px;
+}
+.heading {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.blog-div {
+  text-align: center;
+  margin-top: 80px;
+  line-height: 1.5;
+}
+.blog-rectangle {
+  justify-content: center;
+}
+.blog-img-div {
+  width: 35%;
+}
+.div-2 {
+  width: 45%;
+  text-align: center;
+  background-color: white;
+  line-height: 1.5;
+  padding: 30px;
+}
+.heading-3 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.div-img {
+  display: flex;
+  margin-top: 50px;
+}
+.time {
+  text-transform: capitalize;
+  color: red;
+}
+.blog-btn {
+  margin: 20px 0;
+  background-color: rgb(239, 239, 239);
+  color: black;
+}
+/* our-work-section */
+.our-work-section {
+  background-color: white;
+  padding-bottom: 150px;
+}
+.our-work-div {
+  width: 23%;
+  height: 250px;
+  margin: 30px 0;
+
+}
+/* contacts-section */
+.contact-section {
+  background: linear-gradient(to right, rgb(37, 122, 226), rgb(136, 235, 109));
+}
+.input-form {
+  padding: 25px 50px;
+  font-size: 20px;
+  border-radius: 2%;
+  border: 1px solid white;
+  margin: 15px 20px;
+}
+.input-form-big {
+  padding: 35px 255px;
+  font-size: 20px;
+  border-radius: 2%;
+  border: 1px solid white;
+  margin: 15px 20px;
+}
+
+.map {
+  border-radius: 50%;
+}
+.contact-btn {
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+}
+.contact-div {
+  margin-top: 30px;
+}
+/* footer */
+.footer {
+  background: linear-gradient(to right, rgb(65, 65, 65), rgb(6, 6, 6));
+}
+.hydro-company-div {
+  width: 30%;
+}
+.footer-small {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+.footer-hydro-pera {
+  line-height: 1.5;
+  color: rgb(151, 148, 148);
+}
+li {
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+}
+.footer-hr {
+  width: 90%;
+  margin-top: 80px;
+  color: rgb(87, 84, 84);
+}
+.footer-small-copy {
+  text-transform: capitalize;
+  color: white;
+  padding-right: 100px;
+}
+.footer-flex-div {
+  margin: 50px 0;
+}
+.footer-div {
+  margin: 50px 150px;
+}
