@@ -13,7 +13,7 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-div">
         <div class="flex">
           <nav class="logo">
@@ -33,6 +33,58 @@
             <a href="#"><button class="btn">Sign in/Join</button></a>
           </nav>
         </div>
+      </div>
+    </header> -->
+    <header class="header">
+      <div class="container flex header-div">
+        <div class="flex">
+          <a href="#">
+            <strong class="strong">hydro</strong>
+          </a>
+          <nav class="header-navigation">
+            <ul class="flex navigation">
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">about</a>
+              </li>
+              <li>
+                <a href="#">blog</a>
+              </li>
+              <li>
+                <a href="#">our work</a>
+              </li>
+              <li>
+                <a href="#">contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav>
+          <ul class="flex">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <ul>
+              <li class="sign-in-li">
+                <a class="sign-in-a" href="#">sign in/join</a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- main -->
@@ -92,20 +144,41 @@
               </p>
             </div>
             <div class="article-div article-div-p">
-              <p>Web design <small class="small-p">85%</small></p>
-              <hr />
-              <p>Photography <small class="small-p">90%</small></p>
-              <hr />
-              <p>
-                Content Marketing<small class="small-p small-p-3">85%</small>
-              </p>
-              <hr class="hr" />
-              <p>CMS Admin <small class="small-p">70%</small></p>
-              <hr class="hr" />
+              <div>
+                <div class="start">
+                  <h3>Web design</h3>
+                  <p>85%</p>
+                </div>
+                <progress value="85" max="100"></progress>
+              </div>
+
+              <div>
+                <div class="start">
+                  <h3>photography</h3>
+                  <p>90%</p>
+                </div>
+                <progress value="90" max="100"></progress>
+              </div>
+
+              <div>
+                <div class="start">
+                  <h3>Content marketing</h3>
+                  <p>75%</p>
+                </div>
+                <progress value="75" max="100"></progress>
+              </div>
+
+              <div>
+                <div class="start">
+                  <h3>CMS admin</h3>
+                  <p>70%</p>
+                </div>
+                <progress value="70" max="100"></progress>
+              </div>
             </div>
             <div class="article-div">
               <img
-                class="img"
+                class="img about"
                 src="https://media.istockphoto.com/photos/sales-clerk-smiling-at-camera-picture-id1312455195?b=1&k=20&m=1312455195&s=170667a&w=0&h=-C2YCgO4dOl4OF6-Fj0tV7fIv-2LI72ypj2M6Oe6MCs="
                 alt="man"
               />
@@ -134,8 +207,7 @@
                 />
               </div>
               <div class="div-2">
-                <i class="fa-solid fa-clock-nine"></i>
-                <time class="time">december 22,2017</time>
+                <time class="time"> december 22,2017</time>
                 <h3 class="heading-3">how to find out beautiful workspace.</h3>
                 <p class="article-pera">
                   Lorem, ipsum dolor sit amet consectet amet consectet.
@@ -277,7 +349,7 @@
               <input
                 class="input-form"
                 placeholder="Budget Level "
-                type="text"
+                type="number"
               />
               <br />
               <input
@@ -308,7 +380,7 @@
       <footer class="footer">
         <div class="container">
           <div class="flex footer-flex-div">
-            <div class="hydro-company-div">
+            <div class="hydro-company-div footer-info">
               <small class="footer-small">hydro company</small>
               <p class="footer-hydro-pera">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -316,28 +388,31 @@
                 alias.
               </p>
             </div>
-            <div>
+
+            <div class="footer-info">
               <small class="footer-small">company</small>
-              <ul>
-                <li>about us</li>
-                <li>join our team</li>
-                <li>read blog</li>
-                <li>press</li>
+              <ul class="footer-ul">
+                <li class="line">about us</li>
+                <li class="line">join our team</li>
+                <li class="line">read blog</li>
+                <li class="line">press</li>
               </ul>
             </div>
-            <div>
-              <small class="footer-small">services</small>
-              <ul>
-                <li>pricing</li>
-                <li>documentation</li>
-                <li>support</li>
+
+            <div class="footer-info">
+              <span class="footer-small">services</span>
+              <ul class="footer-ul">
+                <li class="line">pricing</li>
+                <li class="line">documentation</li>
+                <li class="line">support</li>
               </ul>
             </div>
-            <div>
+
+            <div class="footer-info">
               <small class="footer-small">find us</small>
-              <ul>
-                <li>123 grand rama IX</li>
-                <li>krung Thep Maha nakhon 10400</li>
+              <ul class="footer-ul">
+                <li class="line">123 grand rama IX</li>
+                <li class="line">krung Thep Maha nakhon 10400</li>
               </ul>
             </div>
           </div>
